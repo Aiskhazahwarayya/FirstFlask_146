@@ -1,0 +1,139 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(-45deg, #3498db, #2c3e50, #1abc9c, #9b59b6);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: #fff;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Heading Style */
+h1 {
+    color: #ff7f7f;
+    font-size: 3.5em;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+h1:hover {
+    color: #ffc3c3;
+    text-shadow: 0 4px 10px rgba(255, 127, 127, 0.8);
+}
+
+/* Main Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Button Style */
+button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #1abc9c;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #16a085;
+    transform: translateY(-5px) scale(1.03);
+}
+
+/* Link Style */
+a {
+    text-decoration: none;
+    color: #9b59b6;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+
+a:hover {
+    color: #8e44ad;
+    transform: scale(1.1);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 14px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.1em;
+    width: 100%;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+    outline: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1em;
+    color: #777;
+    padding: 10px;
+}
+
+footer a {
+    color: #3498db;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+footer a:hover {
+    color: #2980b9;
+    text-shadow: 0 2px 4px rgba(41, 128, 185, 0.8);
+}
